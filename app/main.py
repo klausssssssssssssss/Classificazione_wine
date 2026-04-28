@@ -52,4 +52,3 @@ def predict(data: Wine):
  
     
 # TO RUN ON TERMINAL DO : uvicorn app.main:app --reload
-
