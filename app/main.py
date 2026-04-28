@@ -25,7 +25,7 @@ def read_root():
 # -------------------------
 @app.post("/predict/mlr")
 def predict(data: Wine):
-    df = pd.DataFrame([data.model_dump()])  # con Pydantic v2 basta questo
+    df = pd.DataFrame([data.model_dump()]) 
     df = df[columns]
 
     pred = mlr_model.predict(df)[0]
@@ -39,7 +39,7 @@ def predict(data: Wine):
 
 @app.post("/predict/knn")
 def predict(data: Wine):
-    df = pd.DataFrame([data.model_dump()])  # con Pydantic v2 basta questo
+    df = pd.DataFrame([data.model_dump()]) 
     df = df[columns]
 
     pred = knn_model.predict(df)[0]

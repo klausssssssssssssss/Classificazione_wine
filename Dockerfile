@@ -16,3 +16,6 @@ EXPOSE 8001
 
 # Avvia FastAPI (modifica "app.main:app" se il tuo path è diverso)
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8001"]
+
+# Per buildare: docker build -t wine-classification-api .
+# Per runnare: docker run -p 8001:8001 wine-classification-api
