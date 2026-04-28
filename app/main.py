@@ -8,7 +8,7 @@ app = FastAPI()
 
 # carica modello (con pipeline inclusa)
 mlr_model= joblib.load("models/mlr_model_pipe.joblib")
-knn_model = joblib.load("models/mlr_model_pipe.joblib")
+knn_model = joblib.load("models/knn_model_pipe.joblib")
 columns = joblib.load("models/columns.joblib")
 
 # -------------------------
